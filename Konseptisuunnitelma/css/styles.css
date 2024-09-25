@@ -1,0 +1,125 @@
+/*@font-face {
+    font-family: 'Figtree';
+    src: url('../fonts/Roboto/Roboto-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Figtree';
+    src: url("C:\Users\Tuomas\OneDrive - Haaga-Helia Oy Ab\Johdanto_Digitaalisiin_Palveluihin\Konseptisuunnitelma\Fonts\Figtree\Figtree-Italic-VariableFont_wght.ttf") format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Figtree';
+    src: url("C:\Users\Tuomas\OneDrive - Haaga-Helia Oy Ab\Johdanto_Digitaalisiin_Palveluihin\Konseptisuunnitelma\Fonts\Figtree\Figtree-VariableFont_wght.ttf") format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+*/
+
+body {
+    font-family: 'Figtree';
+    margin: 0px;
+    color: #dadada;
+    background-color: #272727;
+    /*background-image: url(https://images.unsplash.com/photo-1526655805340-274e69922288?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);*/
+    background-image: linear-gradient(#414141, #000000);
+
+}
+
+h1 {
+    font-family: 'Figtree';
+    font-weight: bold;
+    text-shadow: 1px 1px 2px black;
+    
+    text-align: center; 
+    margin-top: 20px;
+    margin-left: 70px;
+}
+h2 {
+    font-family: 'Figtree';
+    font-weight: bold;
+    text-align: center;
+    margin-top: 50px;
+}
+
+p {
+    margin-top: 30px;
+    margin-bottom: 50px;
+    margin-left: 27%;
+    margin-right: 27%;
+    text-align: center;
+    font-size: 20px;
+    line-height: 1.6;
+  }
+div {
+    text-align: center;
+}
+.navbar ul{
+    display: flex;
+    list-style-type:none;
+    background-image: linear-gradient(#85A865,#5b7344);
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+    justify-content: center;
+}
+.navbar a{
+    font-family: 'Mukta';
+    color: white;
+    text-decoration: none; /*ottaa alleviivauksen pois*/
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
+
+.navbar a:hover{
+    background-color: #5D7647;
+
+}
+.navbar li{
+    float: left;
+    margin: 0px 5px;
+}
+
+.profile-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0px;
+    margin-left: 30px;
+    margin-right: 30px;
+    padding: 15px;
+    /*background-color: black;*/
+    /*background-image: linear-gradient(#1e1e1e 70%, #272727);*/
+}
+
+.profile-text .profile-header{
+    text-align: left;
+}
+
+
+*{  
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.image img{
+    height: 350px;
+    width: 350px;
+    border-radius: 50%;
+    display: block;
+    margin: 50px auto;
+    object-fit: cover;
+}
+
+@media (max-width: 600px) {
+    .image img {
+        height: 150px;
+        width: 150px;
+        margin: 20px auto;
+    }
+}
