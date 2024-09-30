@@ -1,0 +1,202 @@
+/*
+
+@media screen and (min width 480px) {
+body {
+background-color: lightgree;
+}
+}
+*/
+
+body {
+    font-family: 'Figtree';
+    margin: 0px;
+    color: #dadada;
+    background-color: #272727;
+    background-image: linear-gradient(#272727, #000000);
+    overflow-x: hidden;
+
+}
+
+h1 {
+    font-weight: bold;
+    text-shadow: 1px 1px 2px black;
+    
+    text-align: center; 
+    margin-top: 20px;
+    margin-left: 70px;
+}
+h2 {
+    font-weight: bold;
+    text-align: center;
+    margin-top: 50px;
+}
+
+p {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 15%;
+    margin-right: 15%;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.6;
+  }
+
+.navbar {
+    position: relative;
+}
+
+.navbar ul{
+    display: flex;
+    list-style-type:none;
+    background-image: linear-gradient(#85A865,#5b7344);
+    overflow: hidden;
+    justify-content: center;
+}
+.navbar a{
+    font-family: 'Mukta';
+    color: white;
+    text-decoration: none; /*ottaa alleviivauksen pois*/
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
+
+.navbar a:hover{
+    background-color: #5D7647;
+
+}
+.navbar li{
+    float: left;
+    margin: 0px 5px;
+}
+
+.menu-icon {
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+    padding: 15px; 
+}
+
+.profile-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 30px;
+    padding: 15px;
+    flex-direction: row;
+}
+
+.profile-text .profile-header{
+    text-align: left;
+}
+
+
+*{  
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.image img{
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    display: block;
+    margin: 50px auto;
+    object-fit: cover;
+}
+
+
+.flex-container {
+    display:flex;
+    flex-direction: row;
+    margin-top: 6%;
+    margin-bottom: 5%;
+
+}
+
+.flex-container section {
+    width: 50%;
+    padding: 10px;
+    background-image: linear-gradient(#272727, #000000);
+
+
+}
+
+
+footer {
+    background-color: #272727;
+    color: #dadada;
+    text-align: center; 
+    padding: 20px 0;
+    width: 100%; 
+    margin: 0 auto; 
+    box-sizing: border-box; 
+}
+
+footer hr {
+    border-color: #5b7344; /* Set the hr color if needed */
+}
+
+@media (max-width: 480px) {
+    
+    .menu-icon {
+        display: block;
+        color: white;
+        text-align: right;
+        margin: auto;
+    }
+
+    .navbar ul {
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+    }
+
+    .navbar ul.show {
+        display: flex;
+    }
+
+    p {
+        margin-left: 5%;
+        margin-right: 5%;
+        font-size: 16px;
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 22px;
+        margin-left: 0px;
+    }
+
+    .image img {
+        max-width: 170px;
+        height: 170px;
+        margin: 20px auto;
+    }
+
+    .profile-container {
+        flex-direction: column;
+        text-align: center;
+        margin: 0 auto;
+        width: 100%;
+    }
+    .profile-text .profile-header{
+        text-align: center;
+    }
+
+    .profile-text {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .flex-container {
+        flex-direction: column;
+        margin: 10%;
+    }
+    .flex-container section {
+        width: 100%;
+        padding: 0px;
+        margin-top: 10%;
+    }
+}
